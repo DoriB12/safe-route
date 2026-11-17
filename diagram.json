@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "author": "CitizenTech",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-led", "id": "led1", "top": -40, "left": 180, "attrs": { "color": "green" } },
+    { "type": "wokwi-led", "id": "led2", "top": 20, "left": 180, "attrs": { "color": "yellow" } },
+    { "type": "wokwi-led", "id": "led3", "top": 80, "left": 180, "attrs": { "color": "red" } },
+    { "type": "wokwi-buzzer", "id": "bz1", "top": 150, "left": 180, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": 150, "left": -120, "attrs": {} }
+  ],
+  "connections": [
+    [ "led1:A", "esp:23", "green", [ "v0" ] ],
+    [ "led1:C", "esp:GND.2", "black", [ "v0" ] ],
+    [ "led2:A", "esp:22", "yellow", [ "v0" ] ],
+    [ "led2:C", "esp:GND.2", "black", [ "v0" ] ],
+    [ "led3:A", "esp:21", "red", [ "v0" ] ],
+    [ "led3:C", "esp:GND.2", "black", [ "v0" ] ],
+    [ "bz1:2", "esp:19", "orange", [ "v0" ] ],
+    [ "bz1:1", "esp:GND.2", "black", [ "v0" ] ],
+    [ "pot1:GND", "esp:GND.1", "black", [ "v0" ] ],
+    [ "pot1:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "pot1:SIG", "esp:34", "blue", [ "v0" ] ]
+  ]
+}
