@@ -28,4 +28,4 @@ O código utiliza controle de tempo não-bloqueante com `millis()` e média móv
 ---
 
 ## Vídeo de Demonstração
-* **Link do YouTube:** [Cole aqui o link do seu vídeo quando gravar][cite: 1]
+* **Link do YouTube:** : (https://youtu.be/cJA3uXHLfH4?feature=shared)][cite: 1]
